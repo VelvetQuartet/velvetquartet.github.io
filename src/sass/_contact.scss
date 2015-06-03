@@ -32,6 +32,6 @@
         } // h2
     } // section
     @include breakpoint($small) {
-      @include background-image(url("../images/Dudum.png"));
+      @include background-image(url("../images/Dudum.jpg"));
     };
 } // .bio

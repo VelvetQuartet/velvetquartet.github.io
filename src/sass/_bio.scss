@@ -28,10 +28,10 @@
     } // section
     @include breakpoint($small) {
         &#raina-bio {
-            @include background-image(url("../images/Raina.jpeg"));
+            @include background-image(url("../images/Raina.jpg"));
         }
         &#narain-bio {
-            @include background-image(url("../images/Narain.png"));
+            @include background-image(url("../images/Narain.jpg"));
         }
         &#laila-bio {
             @include background-image(url("../images/Laila.jpg"));

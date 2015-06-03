@@ -1,7 +1,7 @@
 {
   "name": "velvet_quartet",
   "version": "0.0.0",
-  "description": "Template for Narain's website",
+  "description": "Template for Velvet Quartet's website",
   "devDependencies": {
     "browserify": "latest",
     "watch": "latest",
@@ -11,13 +11,13 @@
       "jquery": "latest"
   },
   "scripts": {
-      "postinstall" : "mkdir -p build/js && mkdir -p build/css",
-      "clean": "rm -f build/*.html build/js/* build/css/*",
-      "build:css": "rm -f build/css/*.css && compass compile",
+      "postinstall" : "mkdir -p ./js && mkdir -p ./css",
+      "clean": "rm -f ./*.html ./js/* ./css/*",
+      "build:css": "rm -f ./css/*.css && compass compile",
       "watch:css": "compass watch",
-      "build:js": "browserify src/js/*.js -o build/js/bundle.js",
+      "build:js": "browserify src/js/*.js -o ./js/bundle.js",
       "watch:js": "watch 'npm run build:js' src/js/",
-      "build:html": "cp src/index.html build/index.html",
+      "build:html": "cp src/index.html ./index.html",
       "watch:html": "watch 'npm run build:html' src/",
       "build": "npm run build:css && npm run build:js && npm run build:html",
       "watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html'"

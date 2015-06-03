@@ -1,0 +1,55 @@
+#nav {
+    @include breakpoint(max-width $narrow) {
+        display: none;
+    }
+    @include clearfix;
+    position: fixed;
+    top: 0;
+    background-color: $dark;
+    width: 100%;
+    font-family: $headFont;
+
+    .navbar {
+        .title {
+            @include span(1 of 3);
+            color: $light;
+            font-size: 2em;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 10px 10px 10px;
+        }
+        ul {
+
+
+            @include span(2 of 3);
+            li {
+                @include span(1 of 3);
+                float: left;
+                a {
+                    color: $light;
+                    font-size: 1.5em;
+                    text-align: center;
+                    display: inline-block;
+                    padding: 30px 10px 10px 10px;
+                    text-decoration: none;
+                } // a
+            } // li
+            ul {
+                width: 200px;
+                display: none;
+                position: fixed;
+                top: 3.4em;
+                background-color: $dark;
+                li {
+                    @include span(1 of 1);
+                    float: left;
+                }
+            }
+            li:hover{
+                ul {
+                    display: block;
+                }
+            }
+        } // ul
+    } // .navbar
+} // header #nav

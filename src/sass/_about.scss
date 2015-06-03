@@ -1,0 +1,33 @@
+#about {
+    @include clearfix;
+    @include container(100%);
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    @include breakpoint($small) {
+      @include background-image(url("../images/Busking.png"));
+    };
+
+     background: {
+    repeat: no-repeat;
+     size: 500px auto;
+    position: 20px center;
+     }
+
+    section {
+      font-family: $mainFont;
+      @include breakpoint($small) {
+          padding-left: 550px;
+          padding-right: 50px;
+      } // breakpoint
+      p {
+          font-family: $mainFont;
+          line-height: 1.5em;
+      } // p
+      h1 {
+          font-size: 3em;
+          font-family: $headFont;
+          padding-bottom: 20px;
+      } // h2
+    } // section
+} // #about

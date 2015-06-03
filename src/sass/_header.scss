@@ -1,0 +1,31 @@
+header {
+    .fullheight {
+        @include backImage('../images/Group_picture.JPG');
+
+        .hgroup {
+            padding: 200px 0;
+            
+            h1 {
+                position: relative;
+                color: $light;
+                font-size: 4em;
+                font-family: $headFont;
+                @include text-shadow($light 0 0 20px);
+                text-align: center;
+                top: 25px;
+
+                @include breakpoint(0 $small) {
+                    font-size: 3em;
+                } // breakpoint
+            } // h1
+            p {
+                position: relative;
+                left: 50%;
+                top: 290px;
+                img {
+                    width: 2.5em;
+                }
+            } // p
+        } // .hgroup
+    } // .fullheight
+} // .header

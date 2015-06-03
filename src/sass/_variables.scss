@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(http://fonts.googleapis.com/css?family=Sigmar+One);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+$susy: (
+    columns:         5,
+    container:       60em,
+    gutters:         1/4,
+    gutter-position: inside
+);
+
+$narrow: 520px;
+$small:  750px;
+$medium: 960px;
+$wide:   1200px;
+
+$light: #FFFFFF;
+$dark:  #000000;
+
+$headFont: 'Alex Brush', cursive;
+$navFont:  'Gloria Hallelujah', cursive;
+$mainFont: 'Libre Baskerville', serif;
+
+$navForeground: $light;

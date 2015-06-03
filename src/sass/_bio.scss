@@ -1,0 +1,43 @@
+.bio {
+    @include clearfix;
+    @include container(100%);
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+    background: {
+        repeat: no-repeat;
+        size: 500px auto;
+        position: 20px center;
+    } // background
+    section {
+
+        @include breakpoint($small) {
+            padding-left: 550px;
+            padding-right: 50px;
+        } // breakpoint
+        p {
+            font-family: $mainFont;
+            line-height: 1.5em;
+        } // p
+        h1 {
+            font-size: 3em;
+            font-family: $headFont;
+            padding-bottom: 20px;
+        } // h2
+    } // section
+    @include breakpoint($small) {
+        &#raina-bio {
+            @include background-image(url("../images/Raina.jpeg"));
+        }
+        &#narain-bio {
+            @include background-image(url("../images/Narain.png"));
+        }
+        &#laila-bio {
+            @include background-image(url("../images/Laila.jpg"));
+        }
+        &#carlyn-bio {
+            @include background-image(url("../images/Strang.jpg"));
+        }
+    };
+} // .bio

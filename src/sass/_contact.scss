@@ -1,0 +1,37 @@
+.contact {
+    @include clearfix;
+    @include container(100%);
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+
+
+    background: {
+   repeat: no-repeat;
+    size: 500px auto;
+   position: 20px center;
+    }
+
+
+    section {
+      @include breakpoint($small) {
+          padding-left: 550px;
+          padding-right: 50px;
+      } // breakpoint
+        p {
+            font-family: $mainFont;
+            line-height: 1.5em;
+            text-align: center;
+        } // p
+        h1 {
+            font-size: 3em;
+            font-family: $headFont;
+            padding-bottom: 20px;
+            text-align: center;
+        } // h2
+    } // section
+    @include breakpoint($small) {
+      @include background-image(url("../images/Dudum.png"));
+    };
+} // .bio
